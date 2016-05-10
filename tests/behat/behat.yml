@@ -1,0 +1,11 @@
+default:
+  autoload:
+    '': %paths.base%/features/bootstrap
+  suites:
+    default:
+      paths:
+        - %paths.base%/features
+      contexts:
+        - FeatureContext:
+            parameters: 
+              api_url: http://api.phpvalencia.dev
